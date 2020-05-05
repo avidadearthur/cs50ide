@@ -40,7 +40,7 @@ int copy_ll(struct node *noderef, struct node **copyref)
 
 int push(struct node **noderef, int data)
 {
-    struct node* newNode = malloc(sizeof(int));
+    struct node* newNode = malloc(sizeof(struct node));
     if (newNode == NULL)
     {
     return 1;
